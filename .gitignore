@@ -1,0 +1,36 @@
+# Node.js/React
+node_modules/
+backend/flask_session/*
+backend/migrations/*
+build/
+dist/
+.env
+.env.*
+yarn.lock
+npm-debug.log*
+
+# Python/Flask
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+venv/
+db.sqlite3
+instance/
+*.db
+*.sqlite3
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Others
+.idea/
+*.swp 
