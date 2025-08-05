@@ -1,0 +1,32 @@
+{
+  "name": "questionnaire-system",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@ant-design/plots": "^2.4.0",
+    "@vant/area-data": "^2.0.0",
+    "antd": "^5.26.0",
+    "axios": "^0.21.1",
+    "china-division": "^2.7.0",
+    "echarts": "^5.6.0",
+    "echarts-for-react": "^3.0.2",
+    "pinyin": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.2.1",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.1",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^1.1.4",
+    "vite": "^2.7.13"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}

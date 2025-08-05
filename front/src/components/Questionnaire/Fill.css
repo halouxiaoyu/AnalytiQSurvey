@@ -1,0 +1,377 @@
+/* 问卷填写页面美化样式 */
+.qf-header-bar {
+  width: 100px;
+  height: 6px;
+  background: linear-gradient(90deg, #1890ff 0%, #40a9ff 100%);
+  border-radius: 3px;
+  margin: 32px auto 24px auto;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.08);
+}
+
+.qf-container {
+  max-width: 480px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(24,144,255,0.04);
+  padding: 20px 14px 28px 14px;
+}
+
+.qf-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+  padding-bottom: 10px;
+}
+
+.qf-title::after {
+  width: 32px;
+  height: 3px;
+  background: linear-gradient(90deg, #1890ff, #40a9ff);
+  border-radius: 1.5px;
+}
+
+.qf-subtitle {
+  text-align: center;
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 18px;
+  line-height: 1.5;
+  padding: 0 8px;
+}
+
+.qf-question-item {
+  background: #fcfcfd;
+  border-radius: 14px;
+  box-shadow: 0 1px 4px rgba(74,144,226,0.04);
+  margin-bottom: 18px !important;
+  padding: 18px 14px 10px 14px !important;
+  border: 1px solid #f0f0f0;
+  transition: box-shadow 0.2s;
+}
+
+.qf-question-item:hover {
+  background: #f5f7fa;
+}
+
+.qf-question-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.qf-question-index {
+  display: inline-block;
+  background: #4a90e2;
+  color: #fff;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  font-size: 14px;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.qf-required {
+  color: #ff4d4f;
+  font-size: 13px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.qf-radio-group {
+  width: 100%;
+}
+
+.qf-radio {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  transition: all 0.2s;
+}
+
+.qf-radio:hover {
+  background: #f0f7ff;
+  border-color: #e6f7ff;
+}
+
+.qf-radio .ant-radio-checked .ant-radio-inner {
+  border-color: #1890ff !important;
+  background-color: #1890ff !important;
+}
+
+.qf-radio .ant-radio-inner {
+  border-width: 2px;
+}
+
+.qf-input {
+  width: 100%;
+  border-radius: 10px !important;
+  background: #f7f8fa !important;
+  border: 1px solid #e5e6eb !important;
+  font-size: 16px;
+  min-height: 40px;
+}
+
+.qf-input:focus, .qf-input:active, .ant-input:focus, .ant-input:active {
+  border-color: #4a90e2 !important;
+  box-shadow: 0 0 0 2px rgba(74,144,226,0.08);
+  background: #fff;
+}
+
+.qf-submit-btn {
+  width: 100%;
+  height: 46px;
+  border-radius: 23px;
+  font-size: 18px;
+  font-weight: 600;
+  background: #4a90e2;
+  border: none;
+  margin-top: 10px;
+}
+
+.qf-submit-btn:hover, .qf-submit-btn:active {
+  background: linear-gradient(135deg, #40a9ff 0%, #69c0ff 100%);
+  box-shadow: 0 2px 8px rgba(24,144,255,0.12);
+  transform: translateY(-1px);
+}
+
+.qf-loading {
+  text-align: center;
+  padding: 48px 0;
+  color: #4a90e2;
+  font-size: 18px;
+}
+
+@media (max-width: 480px) {
+  .qf-container {
+    padding: 10px 4px 18px 4px;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+  .qf-title {
+    font-size: 18px;
+  }
+  .qf-submit-btn {
+    font-size: 15px;
+    padding: 8px 0;
+  }
+  .qf-question-item {
+    padding: 7px 8px;
+  }
+}
+
+/* 新增主标题下横条 */
+.qf-title-bar {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #1890ff 0%, #40a9ff 100%);
+  border-radius: 2px;
+  margin: 0 auto 24px auto;
+}
+
+/* 移动端背景和头部 */
+.qf-mobile-bg {
+  min-height: 100vh;
+  background: #f5f6fa;
+  padding: 0;
+}
+.qf-mobile-header {
+  background: #4a90e2;
+  color: #fff;
+  padding: 32px 0 48px 0;
+  text-align: center;
+}
+.qf-mobile-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.qf-mobile-desc {
+  font-size: 18px;
+  color: #eaf6ff;
+  opacity: 0.95;
+  text-align: center;
+  max-width: 420px;
+  margin: 0 auto;
+  line-height: 1.7;
+  word-break: break-word;
+  white-space: pre-line;
+}
+.qf-mobile-form {
+  background: transparent;
+  box-shadow: none;
+  padding: 0 0 18px 0;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* 题目样式 */
+.qf-question-label .qf-question-text {
+  font-weight: 600;
+}
+.qf-question-label .ant-form-item-required::before {
+  color: #ff4d4f !important;
+  font-size: 16px;
+  margin-right: 2px;
+}
+
+/* 输入框、单选、多选、按钮等 */
+.qf-input, .qf-radio-group .ant-radio-wrapper, .qf-radio-group .ant-checkbox-wrapper {
+  width: 100%;
+  border-radius: 7px !important;
+  background: #f7f8fa !important;
+  border: 1px solid #f0f0f0 !important;
+  font-size: 15px;
+  min-height: 36px;
+  margin-top: 2px;
+}
+.qf-input:focus {
+  border-color: #4a90e2 !important;
+  box-shadow: none;
+}
+.qf-submit-btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #4a90e2;
+  border: none;
+  margin-top: 8px;
+  color: #fff;
+}
+
+/* 题目项间距 */
+.qf-question-item {
+  margin-bottom: 12px !important;
+}
+
+/* 响应式适配 */
+@media (max-width: 600px) {
+  .qf-mobile-form {
+    max-width: 100vw;
+    border-radius: 0;
+    padding: 0 2px 18px 2px;
+  }
+  .qf-question-item {
+    padding: 12px 6px 6px 6px !important;
+    border-radius: 8px;
+  }
+  .qf-question-label {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  .qf-question-index {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  .qf-radio-group .ant-radio-wrapper,
+  .qf-radio-group .ant-checkbox-wrapper {
+    min-height: 32px;
+    font-size: 14px;
+  }
+  .qf-submit-btn {
+    height: 38px;
+    font-size: 15px;
+    border-radius: 19px;
+  }
+}
+
+/* 深色模式适配 */
+@media (prefers-color-scheme: dark) {
+  .qf-mobile-bg {
+    background: #222 !important;
+  }
+  .qf-question-item {
+    background: #23272f;
+    border: 1px solid #333;
+    color: #eee;
+  }
+  .qf-input, .qf-radio-group .ant-radio-wrapper, .qf-radio-group .ant-checkbox-wrapper {
+    background: #23272f !important;
+    border: 1px solid #333 !important;
+    color: #eee;
+  }
+  .qf-mobile-form {
+    background: transparent;
+  }
+  .qf-mobile-header {
+    background: #222;
+    color: #fff;
+  }
+}
+
+/* 单选/多选项样式 */
+.qf-radio-group .ant-radio-wrapper,
+.qf-radio-group .ant-checkbox-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  min-height: 38px;
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 0 0 0 0;
+  margin-bottom: 0;
+  border-bottom: 1px dashed #e5e6eb;
+  transition: none;
+}
+
+.qf-radio-group .ant-radio-wrapper:last-child,
+.qf-radio-group .ant-checkbox-wrapper:last-child {
+  border-bottom: none;
+}
+
+.qf-radio-group .ant-radio,
+.qf-radio-group .ant-checkbox {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.qf-radio-group .ant-radio-inner,
+.qf-radio-group .ant-checkbox-inner {
+  width: 18px;
+  height: 18px;
+}
+
+.qf-radio-group .ant-radio-checked .ant-radio-inner,
+.qf-radio-group .ant-checkbox-checked .ant-checkbox-inner {
+  border-color: #4a90e2 !important;
+  background: #4a90e2 !important;
+}
+
+/* 其他选项输入框样式 */
+.qf-radio-group .qf-input {
+  width: 180px !important;
+  margin-left: 8px;
+  flex-shrink: 0;
+  background: #f7f8fa !important;
+  border: 1px solid #e5e6eb !important;
+  border-radius: 6px !important;
+  font-size: 15px;
+  height: 32px;
+}
+
+.qf-radio-group .ant-radio-wrapper span:last-child,
+.qf-radio-group .ant-checkbox-wrapper span:last-child {
+  flex: 1;
+  white-space: normal;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #222;
+} 

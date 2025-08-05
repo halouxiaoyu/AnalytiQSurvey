@@ -1,0 +1,314 @@
+.result-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.result-header {
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 32px 24px;
+  background: linear-gradient(135deg, #1890ff 0%, #096dd9 100%);
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(24, 144, 255, 0.2);
+}
+
+.result-header h2 {
+  color: white !important;
+  margin-bottom: 8px !important;
+  font-weight: 600;
+}
+
+.result-header .ant-typography {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.result-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* 总分和评估结果卡片 */
+.result-summary-card {
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8f4fd;
+  background: white;
+}
+
+.result-summary-card .ant-card-body {
+  color: #333;
+}
+
+.result-summary-card .ant-typography {
+  color: #333 !important;
+}
+
+.result-summary-card .ant-typography h4 {
+  color: #1890ff !important;
+}
+
+.result-score-block {
+  text-align: center;
+  padding: 24px 0;
+  background: #fafafa;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.result-score-label {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.result-score {
+  font-size: 48px;
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.result-assessment {
+  text-align: center;
+  padding: 0 24px;
+}
+
+.result-level {
+  margin-bottom: 16px;
+}
+
+.result-opinion {
+  line-height: 1.6;
+  color: #666;
+}
+
+/* 雷达图卡片 */
+.result-radar-card {
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8f4fd;
+  background: white;
+}
+
+.result-radar-card .ant-card-body {
+  padding: 24px;
+}
+
+/* 维度得分卡片 */
+.result-dimensions-card {
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8f4fd;
+  background: white;
+}
+
+.result-dim-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.result-dim-item {
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.result-dim-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.result-dim-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.result-dim-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+}
+
+.result-dim-score {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.result-dim-level {
+  margin-bottom: 8px;
+}
+
+.result-dim-opinion {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 页脚 */
+.result-footer {
+  text-align: center;
+  margin-top: 32px;
+  padding: 16px;
+  color: #999;
+  font-size: 14px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .result-page {
+    padding: 12px;
+  }
+  
+  .result-header {
+    padding: 24px 16px;
+    margin-bottom: 16px;
+  }
+  
+  .result-header h2 {
+    font-size: 20px !important;
+  }
+  
+  .result-radar-card .ant-card-body,
+  .result-summary-card .ant-card-body,
+  .result-dimensions-card .ant-card-body {
+    padding: 16px;
+  }
+  
+  .result-radar-card,
+  .result-summary-card,
+  .result-dimensions-card {
+    margin-bottom: 16px;
+  }
+
+  .result-title {
+    font-size: 24px;
+  }
+
+  .result-dim-list {
+    grid-template-columns: 1fr;
+  }
+
+  .result-score {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .result-page {
+    padding: 8px;
+  }
+  
+  .result-header {
+    padding: 20px 12px;
+  }
+  
+  .result-header h2 {
+    font-size: 18px !important;
+  }
+  
+  .result-radar-card .ant-card-body,
+  .result-summary-card .ant-card-body,
+  .result-dimensions-card .ant-card-body {
+    padding: 12px;
+  }
+}
+
+/* 动画效果 */
+.result-page * {
+  transition: all 0.3s ease;
+}
+
+.result-radar-card:hover,
+.result-summary-card:hover,
+.result-dimensions-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(24, 144, 255, 0.15);
+  border-color: #91d5ff;
+}
+
+/* 进度条样式优化 */
+.ant-progress-bg {
+  background-color: #1890ff !important;
+}
+
+/* 标签样式优化 */
+.ant-tag {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* 卡片内容间距优化 */
+.ant-card-body {
+  line-height: 1.6;
+}
+
+/* 图表容器优化 */
+.echarts-for-react {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* 紧凑布局优化 */
+.result-dimensions-card .ant-card-body {
+  padding: 20px;
+}
+
+/* 自定义滚动条样式 */
+.result-dimensions-card .ant-card-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.result-dimensions-card .ant-card-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.result-dimensions-card .ant-card-body::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.result-dimensions-card .ant-card-body::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 维度卡片紧凑样式 */
+.result-dimensions-card .ant-card-body > div > div {
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 #f1f1f1;
+}
+
+/* 手机端进一步优化 */
+@media (max-width: 768px) {
+  .result-dimensions-card .ant-card-body {
+    padding: 16px;
+  }
+  
+  .result-dimensions-card .ant-card-body > div > div {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .result-dimensions-card .ant-card-body {
+    padding: 12px;
+  }
+  
+  .result-dimensions-card .ant-card-body > div > div {
+    max-height: 250px;
+  }
+}
